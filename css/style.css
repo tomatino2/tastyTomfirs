@@ -17,6 +17,11 @@
     --icon-hover: #333333;
 }
 
+.point_style {
+    list-style: square;
+    font-style: italic;
+}
+
 input,
 textarea {
     resize: none;
