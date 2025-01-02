@@ -265,7 +265,7 @@ button:hover {
     background-color: var(--card-bg);
     border: 1px solid var(--card-border);
     border-radius: 10px;
-    width: 350px;
+    width: 20rem;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
@@ -376,8 +376,16 @@ ul {
     margin: 1rem;
 }
 
+header a,
+footer a {
+
+    margin-top: 15px;
+}
+
 a {
+    display: flex;
     padding: 0.6rem 1rem;
+    align-items: center;
     background-color: var(--link-bg);
     color: var(--link-text-color);
     border-radius: 1rem;
@@ -409,7 +417,26 @@ hr {
     text-align: center;
     margin: 2rem;
 }
-
+.wrap
+.cardss{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: solid var(--card-border) 1px;
+    background-color: var(--card-bg);
+    margin: 2rem;
+    padding: 2rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 1rem;
+    width: 20rem;
+    transition: transform 0.3s ease;
+}
+.cardss h1{
+    font-size: 1.5rem;
+    margin: 1.5rem 0;
+    color: var(--card-border);
+}
 .cards {
     display: flex;
     flex-direction: column;
@@ -451,9 +478,12 @@ hr {
 }
 
 .button {
+    padding: 10px;
+    margin: 0;
+    display: flex;
+    text-align: center;
     background-color: #ffb400;
     color: #fff;
-    padding: 0.6rem 1.2rem;
     text-decoration: none;
     border-radius: 0.5rem;
     font-weight: bold;
