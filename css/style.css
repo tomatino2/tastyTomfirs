@@ -345,12 +345,6 @@ header {
     border-bottom: 1px solid;
     border-image: linear-gradient(to right, #ff9800, #e65100, #d32f2f) 1;
 }
-@media (max-width: 768px) {
-    header {
-        flex-direction: column; /* Empile les éléments */
-        justify-content: center; /* Centre les éléments */
-    }
-}
 
 header img {
     max-width: 6rem;
