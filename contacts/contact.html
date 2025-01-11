@@ -15,11 +15,11 @@
 
 <body>
     <header>
-        <img src="../img/chef1.png" alt="Image du chef">
+        <a class="pasbg" href="../index.html"><img src="../img/chef1.png" alt="Chef image"></a>
+
 
         <nav>
             <ul>
-                <li><a href="../index.html">Accueil</a></li>
                 <li><a href="../allrecepes.html">Toutes les recettes</a></li>
                 <li><a href="../recettes/categorie.html">Catégories</a></li>
                 <li><a class="active" href="contact.html">Contact</a></li>
@@ -40,17 +40,15 @@
             <h2>Formulaire de Contact</h2>
             <form action="" method="POST">
                 <div>
-                    <label for="name" class="form-label">Nom :</label><br>
-                    <input type="text" id="name" name="name" required>
+                    <input type="text" id="name" name="name" placeholder="Nom" required>
                 </div>
                 <div>
-                    <label for="email" class="form-label">Email :</label>
-                    <br>
-                    <input type="email" id="email" name="email" class="form-control" required>
+
+                    <input type="email" id="email" name="email" class="form-control" placeholder="Email" required>
                 </div>
                 <div class="mb-3">
-                    <label for="message" class="form-label">Message :</label><br>
-                    <textarea id="message" name="message" class="form-control" rows="5" required></textarea>
+                    <textarea id="message" name="message" class="form-control" rows="5" placeholder="Message"
+                        required></textarea>
                 </div>
                 <div class="textcote">
                     <button type="submit" class="btn btn-primary">Envoyer</button>

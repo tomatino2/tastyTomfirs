@@ -1,12 +1,12 @@
 :root {
     /* Mode clair */
     --bg-color: #f8f5f0;
-    --text-color: #333333;
+    --text-color: #;
     --header-bg: rgba(217, 93, 57, 0.8);
     --header-text-color: #ffffff;
     --link-bg: #ffb400;
     --link-hover-bg: rgba(255, 180, 0, 0.7);
-    --link-text-color: #6b4226;
+    --link-text-color: #333333;
     --link-hover-text-color: #ffffff;
     --hr-gradient: linear-gradient(to right, #d95d39, #6b4226, #ffb400);
     --card-bg: #ffffff;
@@ -42,6 +42,7 @@ textarea:focus {
 }
 
 button {
+    color: #333333;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -69,7 +70,7 @@ button:hover {
     --header-text-color: #ffffff;
     --link-bg: #ff9800;
     --link-hover-bg: #e65100;
-    --link-text-color: #6b4226;
+    --link-text-color: #333333;
     --link-hover-text-color: #ffffff;
     --hr-gradient: linear-gradient(to right, #ff9800, #e65100, #d32f2f);
     --card-bg: #1c1c1c;
@@ -93,16 +94,11 @@ button:hover {
     margin: 2rem auto;
 }
 
-/* Style pour la section des conseils */
 .conseil {
     padding: 20px;
-    /* Un peu d'espace autour du texte */
     border-radius: 8px;
-    /* Bords arrondis */
     margin: 20px 0;
-    /* Espacement vertical */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    /* Ombre légère */
 }
 
 .instagram {
@@ -120,44 +116,30 @@ button:hover {
 
 .conseil ul {
     list-style-type: none;
-    /* Supprimer les puces par défaut */
     padding-left: 0;
-    /* Supprimer les marges à gauche */
 }
 
 .conseil li {
     font-size: 16px;
-    /* Taille de la police */
     line-height: 1.6;
-    /* Hauteur de ligne pour aérer le texte */
     margin-bottom: 10px;
-    /* Espacement entre chaque item */
 }
 
 .conseil li::before {
     content: "•";
-    /* Ajoute une puce personnalisée */
     color: #ff6347;
-    /* Couleur de la puce (ici une couleur tomate) */
     font-weight: bold;
-    /* Mettre la puce en gras */
     margin-right: 10px;
-    /* Espacement entre la puce et le texte */
 }
 
 
 .image-container {
 
     width: 100%;
-    /* L'image occupe toute la largeur de son conteneur */
     height: auto;
-    /* La hauteur s'ajuste proportionnellement */
     max-width: 300px;
-    /* La taille maximale est limitée à 300px */
     display: block;
-    /* Supprime l'espace sous l'image */
     margin: 0 auto;
-    /* Centrer l'image horizontalement */
 
 }
 
@@ -190,6 +172,22 @@ button:hover {
     color: var(--text-color);
     line-height: 1.6;
     font-size: 1.1rem;
+}
+
+.cards div {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.cards div img {
+    margin: 0;
+    padding: 0;
+    border-radius: 0;
+    border: none;
+    width: 24px;
+    height: 24px;
+
 }
 
 .ingredients li,
@@ -228,6 +226,13 @@ button:hover {
 }
 
 @media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: nowrap;
+    }
+
     .recette {
         padding: 1rem;
     }
@@ -315,10 +320,16 @@ button:hover {
 }
 
 body {
+    height: 100%;
     background-color: var(--bg-color);
     color: var(--text-color);
     font-family: Arial, sans-serif;
     line-height: 1.6;
+}
+
+textarea {
+    font-family: Arial, sans-serif;
+
 }
 
 .pasbg {
@@ -417,8 +428,8 @@ hr {
     text-align: center;
     margin: 2rem;
 }
-.wrap
-.cardss{
+
+.wrap .cardss {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -432,11 +443,13 @@ hr {
     width: 20rem;
     transition: transform 0.3s ease;
 }
-.cardss h1{
+
+.cardss h1 {
     font-size: 1.5rem;
     margin: 1.5rem 0;
     color: var(--card-border);
 }
+
 .cards {
     display: flex;
     flex-direction: column;
@@ -483,7 +496,7 @@ hr {
     display: flex;
     text-align: center;
     background-color: #ffb400;
-    color: #fff;
+    color: #333333;
     text-decoration: none;
     border-radius: 0.5rem;
     font-weight: bold;
@@ -492,7 +505,8 @@ hr {
 
 .button:hover {
     background-color: #d95d39;
-    color: #fff;
+    color: #333333;
+
 }
 
 footer {
@@ -503,7 +517,7 @@ footer {
     padding: 1rem 0;
     background-color: var(--footer-bg);
     color: var(--footer-text-color);
-    margin-top: 2rem;
+    margin-top: auto;
     font-size: 0.9rem;
 }
 
